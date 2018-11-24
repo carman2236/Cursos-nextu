@@ -1,0 +1,212 @@
+body{
+  background-color: #02010a;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10vw;
+  font-family: Dancing Script;
+}
+@keyframes animacionheader {
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+header {
+background-color: #5b7989;
+border-radius: 10px 10px 0 0;
+animation: animacionheader 2s;
+}
+
+
+header nav h1 {
+text-shadow: 2px 2px #02010a;
+display: inline-flex;
+padding-left: 10px;
+padding-right: 55%;
+color: white;
+text-align: left;
+}
+
+header nav a {
+padding-left: 2%;
+color: white;
+text-align: right;
+text-decoration: none;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+  display: block;
+}
+.imagencentral img{
+  background-color: #82c3a6;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 13vw;
+  padding-right: 16vw;
+  width: 50vw;
+
+}
+.imagensecundaria{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  background-color: #d5c75f;
+  border: 1px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2em;
+}
+#izq{
+  width: 38vw;
+}
+#der{
+  width: 30vw;
+}
+#izq:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px  #82c3a6;
+  transition: transform 1s;
+}
+#der:hover{
+  transform:translate(20px,-5px);
+  box-shadow: 2px 2px  #82c3a6;
+  transition: transform 1s;
+}
+
+footer{
+  background-color: #C6d5c5;
+  border-radius:0 0 10px 10px;
+  display: flex;
+  flex-direction: wrap;
+  padding: 3%;
+  font-weight: bold;
+}
+
+.contacto, .terminos{
+  margin-right: 4%;
+}
+
+#faceimg{
+  width: 5%;
+  height: 5%;
+  margin-right: 2px;
+  margin-left: -4px;
+}
+.face p{
+  display: flex;
+}
+#twitimg{
+  width: 5%;
+  height: 5%;
+  margin-right: 2px;
+  margin-left: -4px;
+  margin-top: -5px;
+}
+.twit p{
+  display: flex;
+  margin-top: -20px;
+}
+#instaimg{
+  width: 6%;
+  height: 6%;
+  margin-right: 2px;
+  margin-left: -4px;
+  margin-top: -12px;
+}
+.insta p{
+  display: flex;
+}
+
+/* media queries:*/
+@media screen and (max-width:900px) {
+header, nav{
+  text-align: center;
+
+}
+}
+@media screen and (max-width:900px) {
+  header h1{
+  margin-left: 6em;
+  width: 2vw;
+}
+}
+@media screen and (max-width:900px) {
+  .imagencentral img{
+  width: 71vw;;
+}
+}
+
+@media screen and (max-width:900px) {
+body{
+  width:100%;
+  margin: 0;
+}
+}
+
+@media screen and (max-width:900px) {
+.imagensecundaria{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media screen and (max-width:900px) {
+ #izq, #der{
+   width: 72vw;
+   height: 38vw;
+   margin: auto;
+}
+}
+
+@media screen and (max-width:900px) {
+.contenidopaisajes{
+  display: flex;
+  flex-direction:column;
+  margin: 0 auto;
+}
+}
+@media screen and (max-width:900px) {
+#img1, #img2, #img3, #img4, #img5, #img6{
+  width: 70vw;
+  height: 30vh;
+  margin-left: 15%;
+}
+}
+
+@media screen and (max-width:900px) {
+footer{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+/* seccion de paisajes y retratos:*/
+.contenidopaisajes{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+}
+.contenidopaisajes img{
+  width: 22vw;
+  height: 22vh;
+  margin-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 1em;
+}
+#img1{
+  filter: blur(10px);
+}
+#img2, #img4, #img6{
+  filter: grayscale(100%);
+}
+#img3{
+  filter: sepia(90%);
+}
